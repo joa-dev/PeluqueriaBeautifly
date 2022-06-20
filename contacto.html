@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Beautifly Saloon</title>
 </head>
-<body>
+<body class="contentDeContacto">
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -35,21 +35,26 @@
           </nav>
     </header>
     <section>
-        <article class="historia"><!--Background img blurreada-->
-            <h2>Historia</h2>
-            <p>El salón beautifly es una peluquería clásica ubicada en el Centro de la ciudad de Puerto Rico Misiones Argentina, dedicado a Mujeres y niños.
-                Las mechas balayage, color, corte y masajes capilares es nuestra especialidad.
-                Contamos además con gabinetes de masajes descontracturante y relajantes.
-            </p>
-        </article>
-        <article class="ubicacion"><!--Background img foto-->
-            <h2>Ubicación</h2>
-            <p>Ubicado en esquina Av. San Martin y Av. Carlos Culmey, Puerto Rico, Misiones</p>
-            <p>Frente al Casino Misiones</p>
-        </article>
-        <article class="googlemaps">
-            <iframe src="https://www.google.com/maps/embed?pb=!4v1654699841230!6m8!1m7!1scPGg4k1Wkk7oCm6rEk1h_w!2m2!1d-26.80633867029176!2d-55.0240112609759!3f297.8445578381557!4f-3.6859539284523635!5f0.7820865974627469" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </article>
+        <form class="container-fluid">
+            <section class="formularios"><!--Formularios para completar-->
+                <label class="formulario" for="Nombre"></label>
+                    <input type="text" placeholder="Nombre" required>
+                <label class="formulario" for="Numero de Celular"></label>
+                    <input type="number" placeholder="Numero de Celular" required>
+                <label class="formulario" for="Comentarios"></label>
+                    <input type="text" placeholder="Comentarios">
+                </section>
+            <section class="radio"><!--Botones Radio-->
+                <p>Te interesa recibir Ofertas por WhatsApp?</p>
+                <label for="Ofertas"></label>
+                <input class="radio" type="radio" name="Ofertas" value="si"><p>Si</p>
+                <input class="radio" type="radio" name="Ofertas" value="no"><p>No</p>
+            </section>
+            <article class="botonEnviar">
+                <input type="submit" placeholder="Enviar">
+            </article>
+            </section>
+        </form>
     </section>
     <footer class="container-fluid row">
         <article class="autor col-xs-12 col-lg-4">

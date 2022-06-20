@@ -50,6 +50,9 @@ body{
     font-family: sans-serif;
     background-color: #B79FC7;
 }
+.contentDeContacto{
+    background-image: linear-gradient(to right,rgb(192, 192, 192 ),#B79FC7);
+}
 h2{
     font-weight: bold;
 }
@@ -77,6 +80,36 @@ h2{
     justify-content: center;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+.cardsDeOfertas{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.iframesDeTrabajos{
+    margin: 50px;
+}
+.formulario{
+    margin: 1%;
+}
+.radio p{
+    margin-left: 1%;
+}
+.formularios{
+    display: grid;
+    margin: 0 1%;
+    padding: 10px;
+    max-width: 40%;
+}
+.radio{
+    display: flex;
+    flex-direction: row;
+}
+.botonEnviar{
+    padding: 8px 10%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
 footer{
     background-image: linear-gradient(grey, #292660);
