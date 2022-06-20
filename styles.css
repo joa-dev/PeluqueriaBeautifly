@@ -1,3 +1,15 @@
+.logo, h1, .boton, p, .redes{
+    animation-duration: 1s;
+    animation-name: aparecer;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .logo{
     display: inline;
     max-width: 100px;
@@ -9,11 +21,12 @@ h1{
     font-size: 80px;
     font-weight: lighter;
     color: #FFFFFF;
-    margin: 0px 0px 10px 0px;
 }
 .navbar{
     display: flex;
     justify-content: flex-end;
+    background-image: linear-gradient(#292660, grey);
+    margin-bottom: 1%;
 }
 .boton{
     margin: 10px;
@@ -24,6 +37,8 @@ h1{
 }
 .boton:hover{
     background-color: rgb(192, 192, 192);
+    transition: scale, 0.6s;
+    transform: scale(1.2,1.2);
 }
 header p{
     color: #292660;
@@ -34,6 +49,9 @@ header p{
 body{
     font-family: sans-serif;
     background-color: #B79FC7;
+}
+h2{
+    font-weight: bold;
 }
 .historia{
     background-image: url(./assets/img/background_historia.png);
@@ -58,9 +76,10 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 1%;
+    margin-bottom: 1%;
 }
 footer{
-    background-color: #292660;
+    background-image: linear-gradient(grey, #292660);
 }
 footer p{
     color: #FFFFFF;
