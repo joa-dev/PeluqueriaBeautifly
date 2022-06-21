@@ -11,7 +11,6 @@
     }
 }
 .logo{
-    display: inline;
     max-width: 100px;
 }
 h1{
@@ -87,7 +86,10 @@ h2{
     margin-bottom: 20px;
 }
 .iframesDeTrabajos{
-    margin: 50px;
+    margin: 20px;
+}
+iframe{
+    margin-bottom: 20px;
 }
 .formulario{
     margin: 1%;
@@ -118,4 +120,12 @@ footer p{
     color: #FFFFFF;
     font-size: larger;
     text-align: center;
+}
+@media screen and (max-width: 991px){
+    iframe{
+        height: 600px;
+    }
+    .formularios{
+        max-width: 75%;
+    }
 }
