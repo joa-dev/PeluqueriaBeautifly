@@ -1,0 +1,12 @@
+.logo, h1, .boton, p, .redes, h2{
+    animation-duration: 1s;
+    animation-name: aparecer;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

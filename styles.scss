@@ -1,0 +1,70 @@
+@import "./scss/vars";
+@import "./scss/header";
+@import "./scss/footer";
+@import "./scss/animations";
+@import "./scss/responsive";
+
+body{
+    font-family: sans-serif;
+    background-color: $colorBackground;
+    .contentDeContacto{
+        background-image: linear-gradient(to right, $colorHover, $colorBackground);
+    }
+    .historia{
+        background-image: url(./assets/img/background_historia.png);
+        background-size: cover;
+        grid-row: 2;
+        padding: 15%;
+        color: $colorBlanco;
+        font-size: x-large;
+        h2{
+            font-weight: bold;
+        }
+    }
+    .ubicacion{
+        background-image: linear-gradient($colorSecundario 0%, $colorPrimario 25%, $colorPrimario 75%, $colorSecundario 100%);
+        grid-row: 3;
+        text-align: end;
+        padding: 2%;
+        margin-top: 1%;
+        color: $colorBlanco;
+        font-size: x-large;
+    }
+    .googlemaps{
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        margin-top: 1%;
+    }
+    .cardsDeOfertas{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    iframe{
+        margin-bottom: 20px;
+    }
+
+    .radio p{
+        margin-left: 1%;
+    }
+    .formularios{
+        display: grid;
+        margin: 0 1%;
+        padding: 10px;
+        max-width: 40%;
+        .formulario{
+            margin: 1%;
+        }
+    }
+    .radios{
+        display: flex;
+        flex-direction: row;
+    }
+    .botonEnviar{
+        padding: 8px 10%;
+        max-width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+}

@@ -1,131 +1,145 @@
-.logo, h1, .boton, p, .redes{
-    animation-duration: 1s;
-    animation-name: aparecer;
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-image: linear-gradient(#292660, #808080);
+  margin-bottom: 1%;
 }
-@keyframes aparecer{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+.navbar .logo {
+  max-width: 100px;
 }
-.logo{
-    max-width: 100px;
+.navbar a {
+  text-decoration: none;
 }
-h1{
-    display: inline;
-    font-family: 'Great Vibes', cursive;
-    font-family: 'Parisienne', cursive;
-    font-size: 80px;
-    font-weight: lighter;
-    color: #FFFFFF;
+.navbar a h1 {
+  display: inline;
+  font-family: "Great Vibes", cursive;
+  font-family: "Parisienne", cursive;
+  font-size: 80px;
+  font-weight: lighter;
+  color: #FFFFFF;
 }
-.navbar{
-    display: flex;
-    justify-content: flex-end;
-    background-image: linear-gradient(#292660, grey);
-    margin-bottom: 1%;
+.navbar .pDeNavBar {
+  padding-top: 10px;
+  color: #292660;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
 }
-.boton{
-    margin: 10px;
-    padding: 0px 30px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    align-items: center;
+.navbar .boton {
+  margin: 10px;
+  padding: 0px 30px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  align-items: center;
 }
-.boton:hover{
-    background-color: rgb(192, 192, 192);
-    transition: scale, 0.6s;
-    transform: scale(1.2,1.2);
+.navbar .boton:hover {
+  background-color: #C0C0C0;
+  transition: scale, 0.6s;
+  transform: scale(1.2, 1.2);
 }
-header p{
-    color: #292660;
-    font-size: larger;
-    font-weight: bold;
-    text-align: center;
+
+footer {
+  background-image: linear-gradient(#808080, #292660);
 }
-body{
-    font-family: sans-serif;
-    background-color: #B79FC7;
+footer p {
+  color: #FFFFFF;
+  font-size: larger;
+  text-align: center;
 }
-.contentDeContacto{
-    background-image: linear-gradient(to right,rgb(192, 192, 192 ),#B79FC7);
+
+.logo, h1, .boton, p, .redes, h2 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
 }
-h2{
-    font-weight: bold;
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.historia{
-    background-image: url(./assets/img/background_historia.png);
-    background-size: cover;
-    grid-row: 2;
-    padding: 15%;
-    color: white;
-    font-size: x-large;
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.ubicacion{
-    background-image: url(./assets/img/background_ubicacion.png);
-    background-size: cover;
-    grid-row: 3;
-    text-align: end;
-    padding: 15%;
-    margin-top: 1%;
-    color: #FFFFFF;
-    font-size: x-large;
+@media screen and (max-width: 991px) {
+  iframe {
+    height: 600px;
+  }
+
+  .formularios {
+    max-width: 75%;
+  }
 }
-.googlemaps{
-    grid-row: 4;
-    display: flex;
-    justify-content: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
+body {
+  font-family: sans-serif;
+  background-color: #B79FC7;
 }
-.cardsDeOfertas{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+body .contentDeContacto {
+  background-image: linear-gradient(to right, #C0C0C0, #B79FC7);
 }
-.iframesDeTrabajos{
-    margin: 20px;
+body .historia {
+  background-image: url(./assets/img/background_historia.png);
+  background-size: cover;
+  grid-row: 2;
+  padding: 15%;
+  color: #FFFFFF;
+  font-size: x-large;
 }
-iframe{
-    margin-bottom: 20px;
+body .historia h2 {
+  font-weight: bold;
 }
-.formulario{
-    margin: 1%;
+body .ubicacion {
+  background-image: linear-gradient(#808080 0%, #292660 25%, #292660 75%, #808080 100%);
+  grid-row: 3;
+  text-align: end;
+  padding: 2%;
+  margin-top: 1%;
+  color: #FFFFFF;
+  font-size: x-large;
 }
-.radio p{
-    margin-left: 1%;
+body .googlemaps {
+  grid-row: 4;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
 }
-.formularios{
-    display: grid;
-    margin: 0 1%;
-    padding: 10px;
-    max-width: 40%;
+body .cardsDeOfertas {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
-.radio{
-    display: flex;
-    flex-direction: row;
+body iframe {
+  margin-bottom: 20px;
 }
-.botonEnviar{
-    padding: 8px 10%;
-    max-width: 100%;
-    display: flex;
-    justify-content: flex-start;
+body .radio p {
+  margin-left: 1%;
 }
-footer{
-    background-image: linear-gradient(grey, #292660);
+body .formularios {
+  display: grid;
+  margin: 0 1%;
+  padding: 10px;
+  max-width: 40%;
 }
-footer p{
-    color: #FFFFFF;
-    font-size: larger;
-    text-align: center;
+body .formularios .formulario {
+  margin: 1%;
 }
-@media screen and (max-width: 991px){
-    iframe{
-        height: 600px;
-    }
-    .formularios{
-        max-width: 75%;
-    }
+body .radios {
+  display: flex;
+  flex-direction: row;
 }
+body .botonEnviar {
+  padding: 8px 10%;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}/*# sourceMappingURL=styles.css.map */
