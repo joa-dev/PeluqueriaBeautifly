@@ -16,7 +16,7 @@
   font-family: "Parisienne", cursive;
   font-size: 80px;
   font-weight: lighter;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .navbar .pDeNavBar {
   padding-top: 10px;
@@ -25,14 +25,62 @@
   font-weight: bold;
   text-align: center;
 }
-.navbar .boton {
+.navbar .btn-inicio {
+  background-color: #ff9999;
   margin: 10px;
   padding: 0px 30px;
   border-radius: 10px;
-  background-color: #FFFFFF;
   align-items: center;
 }
-.navbar .boton:hover {
+.navbar .btn-inicio:hover {
+  background-color: #C0C0C0;
+  transition: scale, 0.6s;
+  transform: scale(1.2, 1.2);
+}
+.navbar .btn-ofertas {
+  background-color: #99ff99;
+  margin: 10px;
+  padding: 0px 30px;
+  border-radius: 10px;
+  align-items: center;
+}
+.navbar .btn-ofertas:hover {
+  background-color: #C0C0C0;
+  transition: scale, 0.6s;
+  transform: scale(1.2, 1.2);
+}
+.navbar .btn-trabajos {
+  background-color: #9999ff;
+  margin: 10px;
+  padding: 0px 30px;
+  border-radius: 10px;
+  align-items: center;
+}
+.navbar .btn-trabajos:hover {
+  background-color: #C0C0C0;
+  transition: scale, 0.6s;
+  transform: scale(1.2, 1.2);
+}
+.navbar .btn-marcas {
+  background-color: #ff0000;
+  margin: 10px;
+  padding: 0px 30px;
+  border-radius: 10px;
+  align-items: center;
+}
+.navbar .btn-marcas:hover {
+  background-color: #C0C0C0;
+  transition: scale, 0.6s;
+  transform: scale(1.2, 1.2);
+}
+.navbar .btn-contacto {
+  background-color: #00ff00;
+  margin: 10px;
+  padding: 0px 30px;
+  border-radius: 10px;
+  align-items: center;
+}
+.navbar .btn-contacto:hover {
   background-color: #C0C0C0;
   transition: scale, 0.6s;
   transform: scale(1.2, 1.2);
@@ -42,12 +90,12 @@ footer {
   background-image: linear-gradient(#808080, #292660);
 }
 footer p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: larger;
   text-align: center;
 }
 
-.logo, h1, .boton, p, .redes, h2 {
+.logo, h1, .boton, .navbar .btn-inicio:hover, .navbar .btn-ofertas:hover, .navbar .btn-trabajos:hover, .navbar .btn-marcas:hover, .navbar .btn-contacto:hover, p, .redes, h2 {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-name: aparecer;
@@ -92,7 +140,7 @@ body .historia {
   background-size: cover;
   grid-row: 2;
   padding: 15%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: x-large;
 }
 body .historia h2 {
@@ -104,7 +152,7 @@ body .ubicacion {
   text-align: end;
   padding: 2%;
   margin-top: 1%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: x-large;
 }
 body .googlemaps {
