@@ -1,3 +1,4 @@
+//scss del Header
 .navbar{
     display: flex;
     justify-content: flex-end;
@@ -24,42 +25,17 @@
     font-weight: bold;
     text-align: center;
     }
-    $botones: (
-    inicio: #ff9999,
-    ofertas: #99ff99,
-    trabajos: #9999ff,
-    marcas: #ff0000,
-    contacto: #00ff00
-);
-
-@each $colorBoton, $color in $botones{
-    .btn-#{$colorBoton}{
-        background-color: $color;
-        margin: 10px;
-        padding: 0px 30px;
-        border-radius: 10px;
-        align-items: center;
-        &:hover{
-            @extend.boton;
-            background-color: $colorHover;
-            transition: scale, 0.6s;
-            transform: scale(1.2,1.2);
-        }
+    .boton{
+    margin: 10px;
+    padding: 0px 30px;
+    border-radius: 10px;
+    background-color: $colorBlanco;
+    align-items: center;
+    &:hover{
+        @extend.boton;
+        background-color: $colorHover;
+        transition: scale, 0.6s;
+        transform: scale(1.2,1.2);
     }
-}
-    //Proyecto Original Sin SASS2, cambios en header y htmls.
-    //chequear clase .boton y btn-...
-    // .boton{
-    // margin: 10px;
-    // padding: 0px 30px;
-    // border-radius: 10px;
-    // background-color: $colorBlanco;
-    // align-items: center;
-    // &:hover{
-    //     @extend.boton;
-    //     background-color: $colorHover;
-    //     transition: scale, 0.6s;
-    //     transform: scale(1.2,1.2);
-    // }
-    // }
+    }
 }

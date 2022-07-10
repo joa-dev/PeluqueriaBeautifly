@@ -1,15 +1,12 @@
-@import "./scss/vars";
-@import "./scss/header";
-@import "./scss/footer";
-@import "./scss/animations";
-@import "./scss/responsive";
+@import "./scss/vars";//scss con Variables (colores)
+@import "./scss/header";//scss del Header
+@import "./scss/footer";//scss del Footer
+@import "./scss/animations";//scss con Animaciones
+@import "./scss/responsive";//scss con Responsive para iframes y Formularios
 
 body{
     font-family: sans-serif;
     background-color: $colorBackground;
-    .contentDeContacto{
-        background-image: linear-gradient(to right, $colorHover, $colorBackground);
-    }
     .historia{
         background-image: url(./assets/img/background_historia.png);
         background-size: cover;
@@ -30,7 +27,7 @@ body{
         color: $colorBlanco;
         font-size: x-large;
     }
-    .googlemaps{
+    .googlemaps{//streeview
         grid-row: 4;
         display: flex;
         justify-content: center;
@@ -41,10 +38,10 @@ body{
         justify-content: space-around;
         margin-bottom: 20px;
     }
-    iframe{
+    iframe{//instagram
         margin-bottom: 20px;
     }
-
+    //Lo siguiente es para la página de Contacto
     .radio p{
         margin-left: 1%;
     }
@@ -66,5 +63,8 @@ body{
         max-width: 100%;
         display: flex;
         justify-content: flex-start;
+    }
+    .contentDeContacto{
+        background-image: linear-gradient(to right, $colorHover, $colorBackground);
     }
 }
