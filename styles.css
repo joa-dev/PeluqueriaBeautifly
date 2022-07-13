@@ -91,7 +91,7 @@ body {
   background-color: #B79FC7;
 }
 body .historia {
-  background-image: url(./assets/img/background_historia.png);
+  background-image: url(./assets/img/background_historia.jpg);
   background-size: cover;
   grid-row: 2;
   padding: 15%;
