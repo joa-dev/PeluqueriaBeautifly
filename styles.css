@@ -47,7 +47,13 @@ footer p {
   text-align: center;
 }
 
-.logo, h1, .boton, .navbar .boton:hover, p, .redes, h2 {
+.logo,
+h1,
+.boton,
+.navbar .boton:hover,
+p,
+.redes,
+h2 {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-name: aparecer;
@@ -110,6 +116,9 @@ body .googlemaps {
   justify-content: center;
   margin-top: 1%;
 }
+body .carousel {
+  margin-bottom: 1%;
+}
 body .cardsDeOfertas {
   display: flex;
   justify-content: space-around;
@@ -148,7 +157,8 @@ body .botonEnviar {
   max-width: 100%;
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 1%;
 }
 body .contentDeContacto {
-  background-image: linear-gradient(to right, #C0C0C0, #B79FC7);
+  background-image: linear-gradient(to left, #C0C0C0, #B79FC7);
 }/*# sourceMappingURL=styles.css.map */

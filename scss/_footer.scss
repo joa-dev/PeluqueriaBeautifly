@@ -1,9 +1,10 @@
 //scss del Footer
-footer{
+footer {
     background-image: linear-gradient($colorSecundario, $colorPrimario);
-    p{
-    color: $colorBlanco;
-    font-size: larger;
-    text-align: center;
+
+    p {
+        color: $colorBlanco;
+        font-size: larger;
+        text-align: center;
     }
 }

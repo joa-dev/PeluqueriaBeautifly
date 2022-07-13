@@ -1,15 +1,18 @@
 //scss del Header
-.navbar{
+.navbar {
     display: flex;
     justify-content: flex-end;
     background-image: linear-gradient($colorPrimario, $colorSecundario);
     margin-bottom: 1%;
-    .logo{
-    max-width: 100px;
+
+    .logo {
+        max-width: 100px;
     }
-    a{
+
+    a {
         text-decoration: none;
-        h1{
+
+        h1 {
             display: inline;
             font-family: 'Great Vibes', cursive;
             font-family: 'Parisienne', cursive;
@@ -18,24 +21,27 @@
             color: $colorBlanco;
         }
     }
-    .pDeNavBar{
-    padding-top: 10px;
-    color: $colorPrimario;
-    font-size: larger;
-    font-weight: bold;
-    text-align: center;
+
+    .pDeNavBar {
+        padding-top: 10px;
+        color: $colorPrimario;
+        font-size: larger;
+        font-weight: bold;
+        text-align: center;
     }
-    .boton{
-    margin: 10px;
-    padding: 0px 30px;
-    border-radius: 10px;
-    background-color: $colorBlanco;
-    align-items: center;
-    &:hover{
-        @extend.boton;
-        background-color: $colorHover;
-        transition: scale, 0.6s;
-        transform: scale(1.2,1.2);
-    }
+
+    .boton {
+        margin: 10px;
+        padding: 0px 30px;
+        border-radius: 10px;
+        background-color: $colorBlanco;
+        align-items: center;
+
+        &:hover {
+            @extend.boton;
+            background-color: $colorHover;
+            transition: scale, 0.6s;
+            transform: scale(1.2, 1.2);
+        }
     }
 }

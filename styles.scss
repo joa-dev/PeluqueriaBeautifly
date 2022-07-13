@@ -1,25 +1,28 @@
-@import "./scss/vars";//scss con Variables (colores)
-@import "./scss/header";//scss del Header
-@import "./scss/footer";//scss del Footer
-@import "./scss/animations";//scss con Animaciones
-@import "./scss/responsive";//scss con Responsive para iframes y Formularios
+@import "./scss/vars"; //scss con Variables (colores)
+@import "./scss/header"; //scss del Header
+@import "./scss/footer"; //scss del Footer
+@import "./scss/animations"; //scss con Animaciones
+@import "./scss/responsive"; //scss con Responsive para iframes y Formularios
 
-body{
+body {
     overflow-x: hidden;
     font-family: sans-serif;
     background-color: $colorBackground;
-    .historia{
+
+    .historia {
         background-image: url(./assets/img/background_historia.png);
         background-size: cover;
         grid-row: 2;
         padding: 15%;
         color: $colorBlanco;
         font-size: x-large;
-        h2{
+
+        h2 {
             font-weight: bold;
         }
     }
-    .ubicacion{
+
+    .ubicacion {
         background-image: linear-gradient($colorSecundario 0%, $colorPrimario 25%, $colorPrimario 75%, $colorSecundario 100%);
         grid-row: 3;
         text-align: end;
@@ -28,53 +31,71 @@ body{
         color: $colorBlanco;
         font-size: x-large;
     }
-    .googlemaps{//streeview
+
+    .googlemaps {
+        //streeview
         grid-row: 4;
         display: flex;
         justify-content: center;
         margin-top: 1%;
     }
-    .cardsDeOfertas{
+
+    .carousel {
+        margin-bottom: 1%;
+    }
+
+    .cardsDeOfertas {
         display: flex;
         justify-content: space-around;
         margin-bottom: 20px;
     }
-    .botonCards{
+
+    .botonCards {
         background-color: $colorPrimario;
-        &:hover{
+
+        &:hover {
             color: $colorPrimario;
             background-color: $colorHover;
             transition: scale, 0.6s;
-            transform: scale(1.3,1.3);
+            transform: scale(1.3, 1.3);
         }
     }
-    iframe{//instagram
+
+    iframe {
+        //instagram
         margin-bottom: 20px;
     }
+
     //Lo siguiente es para la página de Contacto
-    .radio p{
+    .radio p {
         margin-left: 1%;
     }
-    .formularios{
+
+    .formularios {
         display: grid;
         margin: 0 1%;
         padding: 10px;
         max-width: 40%;
-        .formulario{
+
+        .formulario {
             margin: 1%;
         }
     }
-    .radios{
+
+    .radios {
         display: flex;
         flex-direction: row;
     }
-    .botonEnviar{
+
+    .botonEnviar {
         padding: 8px 10%;
         max-width: 100%;
         display: flex;
         justify-content: flex-start;
+        margin-bottom: 1%;
     }
-    .contentDeContacto{
-        background-image: linear-gradient(to right, $colorHover, $colorBackground);
+
+    .contentDeContacto {
+        background-image: linear-gradient(to left, $colorHover, $colorBackground);
     }
 }
